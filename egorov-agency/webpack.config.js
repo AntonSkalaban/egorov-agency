@@ -57,6 +57,7 @@ module.exports = {
           'group-css-media-queries-loader',
           {
             loader: 'resolve-url-loader',
+            options: {     removeCR: true   }
           },
           {
             loader: 'sass-loader',

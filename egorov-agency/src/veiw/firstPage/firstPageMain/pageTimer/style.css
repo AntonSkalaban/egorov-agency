@@ -1,0 +1,62 @@
+.main__timer {
+    width: 588px;
+    height: 129px;
+
+    display: flex;
+
+    margin-bottom: 75px;
+}
+
+
+.timer-component {
+    width: 132px;
+    height: 129px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.timer__time-container{
+    width: 100%px;
+    height: 92px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.timer__time-counter-text {
+    width: 100%;
+
+    text-align: center;
+    font-size: 72px;
+    line-height: 100%;
+
+    font-weight: 600;
+    color: #162C4E;
+
+    padding-top: 5px;
+}
+
+.timer-colons {
+    padding-left: 2px;
+}
+
+.timer__time-type {
+    width: 132px;
+    height: 54px;
+    
+    background: url('../../../../assets/svg/timerIcon.svg') no-repeat ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer__time-text {
+font-size: 16px;
+line-height: 100%;
+padding-top: 2px;
+
+}
