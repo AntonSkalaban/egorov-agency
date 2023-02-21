@@ -2,7 +2,7 @@
 
     font-family: 'SF Pro Display';
 
-    src: url('../../../assets/fonts/SFPRODISPLAYBOLD.OTF');
+    src: url('../../../assets/fonts/SFPRODISPLAYMEDIUM.OTF');
 }
 
 @media (max-width: 1901px) {
@@ -16,6 +16,7 @@
         gap: 4px;
 
         font-family: 'SF Pro Display';
+        font-weight: 200;
         color: white;
         margin-bottom: 50px;
     }
@@ -39,8 +40,8 @@
     }
 
     .event__title-number {
-        font-style: normal;
-        font-weight: 600;
+        /* font-style: normal;
+        font-weight: 600; */
         font-size: 40px;
         line-height: 100%;
         margin-bottom: 20px;
@@ -50,8 +51,8 @@
         width: 800px;
         transform: rotate(-90deg);
 
-        font-style: normal;
-        font-weight: 600;
+        /* font-style: normal;
+        font-weight: 600; */
         font-size: 32px;
         line-height: 100%;
 
@@ -60,13 +61,21 @@
     }
 
     .event__body {
-        width: 995px;
+        /* width: 995px; */
+        width: 0px;
         height: 100%;
-        display: flex;
-        justify-content: flex-start;
+        transition: all ease-in-out 1s;
+
         background-size: cover;
         background-repeat: repeat;
+        background-position: center;
 
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .event__body_active {
+        width: 995px;
     }
 
     .event__side-bar {
@@ -85,10 +94,10 @@
         height: 380px;
         left: -143px;
         top: -38px;
-
+/* 
         font-family: 'SF Pro Display';
-        font-style: normal;
-        font-weight: 600;
+        font-style: normal; */
+        font-weight: 600; 
         font-size: 380px;
         line-height: 100%;
         /* identical to box height, or 380px */
@@ -117,9 +126,9 @@
 
         width: 150px;
         height: 29px;
-
+/* 
         font-style: normal;
-        font-weight: 600;
+        font-weight: 600; */
         font-size: 24px;
         line-height: 120%;
     }
@@ -128,8 +137,8 @@
 
         width: 170px;
         height: 27px;
-        font-style: normal;
-        font-weight: 400;
+        /* font-style: normal;
+        font-weight: 400; */
         font-size: 18px;
         line-height: 150%;
         color: rgba(255, 255, 255, 0.8);
@@ -217,12 +226,13 @@
 
     .event__body {
         width: 100%;
-        height: 460px;
+        height: 0px;
         flex-direction: column;
         justify-content: flex-end;
+    }
 
-  
-
+    .event__body_active {
+        height: 460px;
     }
 
     .event__side-bar {
@@ -248,8 +258,19 @@
         font-size: 18px;
     }
 
-    .event__body {
+    /* .event__body {
         width: 100%;
+        /* height: 376px; */
+
+    /* .event__body {
+        width: 100%;
+        /* height: 0px; */
+        /* height: 376px;
+        flex-direction: column;
+        justify-content: flex-end;
+    } */ 
+    
+    .event__body_active {
         height: 376px;
     }
 

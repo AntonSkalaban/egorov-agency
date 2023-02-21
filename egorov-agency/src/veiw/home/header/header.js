@@ -22,7 +22,8 @@ const createHeader = () => {
   linkContainer.append(headerLogoContainer);
   headerLogoContainer.append(headerLogo);
 
-  header.append(headerTitleContainer);
+  header.append(linkContainer);
+  linkContainer.append(headerTitleContainer);
   headerTitleContainer.append(headerTitle);
   headerTitleContainer.append(headerSubTitle);
 

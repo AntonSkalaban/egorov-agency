@@ -30,9 +30,9 @@ const createEventCard = (number, title, date, imgUrl) => {
   eventInfoTitle.textContent = title;
   eventInfoDate.textContent = date;
   eventInfoBtn.textContent = 'More information';
-  eventInfoBtn.href = 'https://rs.school/'
+  eventInfoBtn.href = 'https://rs.school/';
 
-  eventBody.style.display = number === 1 ? 'flex' : 'none';
+  if (number === 1) eventBody.classList.add('event__body_active');
 
   eventCard.append(eventKey);
   eventKey.append(eventTitleNumber);
