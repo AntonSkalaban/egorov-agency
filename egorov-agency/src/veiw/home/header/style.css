@@ -1,0 +1,89 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+  @media (max-width: 1901px) {
+.header {
+    width: 200px;
+    height: 80px;
+    
+    display: flex;
+    align-items: center;
+
+    padding-left: 10px;
+    margin-top: 10vh;
+    /* margin-bottom: 10vh; */
+}
+
+
+.header__logo-container {
+    display: flex;
+    align-items: center;
+    
+}
+.header__title-container {
+    height: 60px;
+
+    align-items: center;
+    color: #172C4F
+}
+
+.header__title {
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 48px;
+    text-transform: uppercase;
+
+    padding-top: 2px;
+    margin-left: 12px;
+}
+
+.header__subtitle {
+
+    line-height: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    margin-left: 48px;
+}
+  }
+
+  @media (max-width: 1500px) { 
+  
+    .header{
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+    }
+  }
+
+  @media (max-width: 900px) { 
+  
+    .header{
+        width: 110px;
+        height: 60px;
+        margin-top: 6vh;
+        margin-bottom: 3vh;
+        padding: 0;
+    }
+
+    .header__logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header__title-container {
+        height: 40px;
+    }
+    .header__title {
+        line-height: 30px;
+        font-size: 30px;
+        font-weight: 600;
+
+        margin-left: 5px;
+    }
+
+    .header__subtitle {
+        margin-left: 19px;
+        line-height: 7px;
+        font-size: 7px;
+    }
+  }
