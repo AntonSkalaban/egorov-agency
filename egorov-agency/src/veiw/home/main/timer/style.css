@@ -1,0 +1,188 @@
+@media (max-width: 1901px) {
+      
+      @keyframes show {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+    .main__timer {
+        width: 588px;
+        height: 129px;
+
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 2vh;
+
+        animation: 2s show ease;
+    }
+
+
+    .timer-component {
+        width: 132px;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .timer__time-container {
+        width: 80%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .timer__counter {
+        width: 100%;
+
+
+        text-align: center;
+        font-size: 72px;
+        line-height: 100%;
+
+        font-weight: 600;
+        color: #162C4E;
+
+        padding-top: 5px;
+    }
+
+    .timer-colons {
+        padding-left: 2px;
+        height: 100%;
+    }
+
+    .timer__time-type {
+        width: 132px;
+        height: 54px;
+
+        background: url('../../../../assets/svg/timerIcon.svg') no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .timer__time-text {
+        font-size: 16px;
+        line-height: 100%;
+        padding-top: 2px;
+
+    }
+
+
+
+}
+
+
+@media (max-width: 1050px) {
+    .main__timer {
+        height: 82px;
+    }
+    
+    .timer__time-container {
+        width: 45%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .timer__time-type {
+
+        width: 64px;
+        height: 40px;
+
+        box-sizing: border-box;
+        padding-left: calc(50% - 6px);
+        justify-content: normal;
+    }
+
+    .timer__time-text_days:before {
+        content: "DD";
+        visibility: visible;
+    }
+
+    .timer__time-text_hours:before {
+        content: "HH";
+        visibility: visible;
+    }
+
+    .timer__time-text_minutes:before {
+        content: "MM";
+        visibility: visible;
+    }
+
+    .timer__time-text_seconds:before {
+        content: "SS";
+        visibility: visible;
+    }
+
+    .timer-time-text:before {
+
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+
+    }
+
+    .timer__time-text {
+        width: 0;
+        visibility: hidden;
+    }
+
+    .timer__counter {
+        font-size: 36px;
+    }
+
+
+
+    .timer__time-text {
+        font-size: 12px;
+        line-height: 100%;
+        padding-top: 2px;
+
+    }
+}
+
+/* @media (max-width: 1500px) {
+    .main__timer {
+        width: 400px;
+        height: 100px;
+        margin-bottom: 5vh;
+    }
+
+    .timer__time-container {
+        height: 54px;
+
+    }
+
+    .timer__time-counter-text {
+
+        font-size: 50px;
+    }
+
+    .timer__time-type {
+        width: 100px;
+        height: 40px;
+       
+    }
+
+    .timer__time-text {
+        font-size: 14px;
+    }
+
+    .timer-colons {
+        width: 50px;
+        padding-top: 20px;
+    }
+} */
